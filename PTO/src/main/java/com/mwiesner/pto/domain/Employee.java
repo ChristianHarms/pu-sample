@@ -10,7 +10,11 @@ import lombok.Getter;
 @AllArgsConstructor(staticName="of")
 @Builder
 public class Employee {
-	
+
+	private Employee() {
+
+	}
+
 	@Id
 	private String id;
 	private String email;
